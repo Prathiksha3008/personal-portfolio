@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header">
+                <p>
+                    Student
+                </p>
+                <h1>Hey, I'm <span>Prathiksha <br> Nijamkari</span></h1>
+            </div>
+        </div>
+
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="WhatsApp Image 2023-09-16 at 22.39.23.jpeg">
+                </div>
+                    <div class="about-col-2"><h1 class="subtitle">
+                       <h1 class="sb">About me</h1>
+                       
+                        <p>Hey y'all, i'm a Information Science and Engineering student pursuing my 3rd year at new Horizon College of Engineering. I am an enthusiastic coder and a passionate writer. Well, my motive is to keep learning new skills and improve my knowledge.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(skills)">skills</p>
+                        <p class="tab-links" onclick="opentab(experience)">Experience</p>
+                        <p class="tab-links" onclick="opentab(education)">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages known </span><br>Java,python,C</li>
+                            <li><span>Frontend Web Development</span><br> HTML,CSS,Js</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Freelance Content Writer</span><br>Writing articles,blogs, website cotent for companies and startups- vocabulary,research. </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>BTECH </span><br>New Horizon College of Engineering-pursuing</li>
+                            <li><span>XII </span><br>HAL Public School-91.4%</li>
+                            <li><span>X </span><br>HAL Gnanajyoti School-95.4%</li>
+                        </ul>
+                    </div>
+                </div>
+                      
+                
+            </div>
+        </div>
+    </div>
+
+<div>
+    <h1 class="projheading">Projects</h1>
+    <section class="project">
+        <div class="project-logo">
+            <img src="Free_Sample_By_Wix.jpg" alt="Project 1 Logo">
+        </div>
+        <div class="project-details">
+            <h2>Project 1</h2>
+            <p>Aquaphonics- A IOT project developed to check the
+                right conditions for aquatic organism- IOT.</p>
+        </div>
+    </section>
+
+    <section class="project">
+       
+        <div class="project-details">
+            <h2>Project 2</h2>
+            <p>Music Player- A clean,library managed and intuitive
+                GUI based music player-python.</p>
+        </div>
+        <div class="project-logo">
+            <img src="WhatsApp Image 2023-10-18 at 11.16.22.jpeg" alt="Project 2 Logo">
+        </div>
+    </section>
+</div>
+
+                                
+                            <section class="contact">
+                                <h2>Contact Me</h2>
+                                <p>Feel free to reach out through the following channels:</p>
+                                
+                                <ul class="social-media">
+                                    <li><a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a></li>
+                                    <li><a href="https://github.com/your-username" target="_blank">GitHub</a></li>
+                                    <!-- Add more social media links as needed -->
+                                </ul>
+                                
+                                <a href="mailto:your@email.com" class="email-button">Email Me</a>
+                            </section>
+                        
+    <script>
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontents= document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementsById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
